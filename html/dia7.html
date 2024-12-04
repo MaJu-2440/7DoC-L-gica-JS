@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica JS | Dia 7</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calculadora.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dia1.html">Dia 1</a>
+            <a href="dia2.html">Dia 2</a>
+            <a href="dia3.html">Dia 3</a>
+            <a href="dia4.html">Dia 4</a>
+            <a href="dia5&6.html">Dia 5&6</a>
+            <a href="dia7.html">Dia 7</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Funções em Javascript</h1>
+
+        <div class="desc_container">
+            <p class="descrição_desafio">
+                Para o exercício de hoje: <strong>você já parou para pensar como uma calculadora funciona?</strong>
+            </p>
+
+            <p class="descrição_desafio">
+                Neste último desafio, a minha proposta para você é: <strong>crie a sua própria calculadora</strong>, porém com um detalhe muito importante: cada operação deverá ser uma função diferente no seu código.
+            </p>
+        </div>
+        
+        <div class="calculadora_container">
+            <div class="calculadora_content">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button class="button_operador" onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button class="button_operador" onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button class="button_operador" onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button class="button_operador" onclick="appendToDisplay('-')">-</button>
+                <button class="button_operador" onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button class="button_operador" onclick="calculateResult()">=</button>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/dia7.js"></script>
+</body>
+</html>
