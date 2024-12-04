@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: .5rem;
+}
+.form_container {
+    border: 2px solid blueviolet;
+    padding: 1em;
+
+    .btn {
+        margin-top: 1em;
+    }
+}
+label {
+    font-size: .8em;
+    font-weight: 500;
+}
+input {
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: .3em;
+}
+.formExtra, .buttonExtra, .container_palpite{
+    display: none;
+}

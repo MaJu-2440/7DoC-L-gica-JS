@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica com JS | Dia 2</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dia1.html">Dia 1</a>
+            <a href="dia2.html">Dia 2</a>
+            <a href="dia3.html">Dia 3</a>
+            <a href="dia4.html">Dia 4</a>
+            <a href="dia5&6.html">Dia 5&6</a>
+            <a href="dia7.html">Dia 7</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastro dinâmico</h1>
+
+        <div class="desc_container">
+            <p class="descrição_desafio">
+                Quando você cria algum sistema, site ou aplicativo, é comum querer colocar alguns toques personalizados para tornar a<strong> experiência na sua aplicação mais rica e dinâmica.</strong>
+            </p>
+
+            <p class="descrição_desafio">
+                Para isso, o importante é entender como capturar e armazenar valores dentro de variáveis.
+            </p>
+        </div>
+
+        <div class="form_container">
+            <form>
+                <label for="nome">Qual o seu nome ?</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="idade">Quantos anos você tem ?</label>
+                <input type="number" name="idade" id="idade" required>
+
+                <label for="linguagem">Qual linguagem de programação você está estudando ?</label>
+                <input type="text" name="linguagem" id="linguagem" required>
+            
+            </form>
+                <button onclick="enviarDados()"class="btn enviarDados">Enviar</button>
+        </div>
+
+        <p class="mensagemDinamica"></p>
+        
+        <form class="form_container formExtra">
+            <label for="respostaExtra" class="perguntaExtra"></label>
+            <input type="text" name="respostaExtra" id="respostaExtra" placeholder="Digite aqui...">        
+        </form>
+
+        <button onclick="tratarRespostaExtra()" class="btn buttonExtra">Enviar</button>
+
+        <p class="mensagemExtra"></p>
+        
+    </main>
+
+    <script src="/js/dia2.js"></script>
+</body>
+</html>
