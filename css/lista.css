@@ -1,0 +1,13 @@
+ul {
+    list-style-type: square;
+    font-weight: 600;
+    text-align: start;
+    border: 1px solid #ccc;
+    padding: .8rem;
+
+    display: none;
+}
+li {
+    font-weight: 500;
+    margin-left: 1em;
+}
