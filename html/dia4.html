@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Lógica com JS | Dia 4</title> <!-- Título da página -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link para o arquivo de estilo principal -->
+    <link rel="stylesheet" href="/css/form.css"> <!-- Link para o arquivo de estilo do formulário -->
+    <link rel="stylesheet" href="/css/lista.css"> <!-- Link para o arquivo de estilo da lista de mensagens -->
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Links de navegação para diferentes páginas do projeto -->
+            <a href="dia1.html">Dia 1</a>
+            <a href="dia2.html">Dia 2</a>
+            <a href="dia3.html">Dia 3</a>
+            <a href="dia4.html">Dia 4</a>
+            <a href="dia5&6.html">Dia 5&6</a>
+            <a href="dia7.html">Dia 7</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Loops de randomização</h1> <!-- Título principal da seção -->
+
+        <div class="desc_container">
+            <!-- Descrição do jogo -->
+            <p class="descrição_desafio">Você já brincou de tentar adivinhar o número que seu amigo ou amiga estava pensando? 
+            </p>
+            <p class="descrição_desafio">
+                Hoje você vai voltar na infância e fazer exatamente isso. Mas agora, <strong>o jogo vai ser contra o próprio computador!</strong>
+            </p>
+            <p class="descrição_desafio">
+                Clique em <strong>iniciar</strong> e o computador vai pensar em um número entre 1 e 10 para você adivinhar.
+            </p>
+        </div>
+
+        <div class="form_container container_palpite">
+            <!-- Formulário para o usuário inserir seu palpite -->
+            <label for="chute">Digite aqui seu chute:</label> <!-- Rótulo para o campo de entrada -->
+            <input type="number" name="chute" id="chute" max="10" min="1"> <!-- Campo de entrada para o palpite -->
+            <button onclick="verificarPalpite()" class="btn enviar">Enviar</button> <!-- Botão para enviar o palpite -->
+        </div>
+        
+        <ul class="mensagem"></ul> <!-- Lista que exibirá as mensagens para o usuário -->
+
+        <button onclick="iniciarJogo()" class="btn iniciar">Iniciar</button> <!-- Botão para iniciar o jogo -->
+
+    </main>
+    <script src="/js/dia4.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica do jogo -->
+</body>
+</html>
