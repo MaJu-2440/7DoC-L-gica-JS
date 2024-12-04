@@ -18,11 +18,13 @@ header {
     font-size: .8em;
     background-color: blueviolet;
 }
+
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 nav a {
     text-decoration: none;
     font-weight: 600;
@@ -32,6 +34,7 @@ nav a {
 nav a:hover {
     background-color: rgb(150, 55, 238);
 }
+
 main {
     padding: 1rem;
 
@@ -41,25 +44,31 @@ main {
     flex-direction: column;
     gap: 1em;
 }
+
 h1, h2 {
     text-transform: uppercase;
     color: blueviolet;
 }
+
 .desc_container {
     text-align: left;
 }
+
 .descrição_desafio {
     padding: .5em 0;
 }
+
 .container_pergunta {
     width: 100%;
     margin-top: 1rem;
     border: 2px solid blueviolet;
     background-color: blueviolet;
 }
+
 .container_pergunta img {
     width: 100%;
 }
+
 .btn {
     border: none;
     text-transform: uppercase;
